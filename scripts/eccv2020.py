@@ -48,10 +48,10 @@ info = list(zip(titles, urls))
 
 # save results to a csv file
 df = pd.DataFrame(info, columns=['title', 'url'])
-df.to_csv('.\csv_files\eccv2020.csv', index=False)
+df.to_csv('csv_files/eccv2020.csv', index=False)
 
 def download_papers(info):
-    save_path = 'C:/Users/Admin/Desktop/TODO/eccv2020/'
+    save_path = '.'
     save_path = os.path.join(save_path, info[0])
     urlretrieve(info[1], save_path)
 
