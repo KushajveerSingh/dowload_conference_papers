@@ -2,8 +2,41 @@
 Placeholder for scripts to download conference papers.
 
 Scripts for following conferences are available:
-1. CVPR 2020 
-2. ECCV 2020
+* [ICLR 2021](#ICLR-2021)
+* ECCV 2020
+* CVPR 2020 
+
+### ICLR 2021
+Thanks to [Sergey Ivanov](https://twitter.com/SergeyI49013776) for providing a csv file containing all ICLR papers with their urls. Original source of file [link](https://twitter.com/sergeyi49013776/status/1326218056088039425?lang=en). I have copied the file to [scripts/csv_files/iclr2021.csv](scripts/csv_files/iclr2021.py).
+
+[scripts/iclr_2021.py](scripts/iclr_2021.py) is used to download the papers. Modify the `__main__` function as per your needs.
+
+```python
+SAVE_PATH = "../../ICLR"  # where to save the papers
+PROCESSES = 8  # number of threads on your CPU
+
+os.makedirs(SAVE_PATH, exist_ok=True)
+
+# comment out the sections for which you don't want to download papers
+setup('oral')
+setup('spotlight')
+setup('poster')
+```
+
+The papers are sorted by their rating. The final directory structure is
+```
+ICLR
+├── oral
+    ├── ... 
+├── poster
+    ├── ...
+└── spotlight
+    ├── ...
+```
+
+Final download size is 3.8 GB.
+
+## Old
 
 For every conference, corresponding csv files are also provided in **scripts/csv_files**.
 
