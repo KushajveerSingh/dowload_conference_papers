@@ -7,7 +7,7 @@ Scripts for following conferences are available:
 * CVPR 2020 
 
 ### ICLR 2021
-Thanks to [Sergey Ivanov](https://twitter.com/SergeyI49013776) for providing a csv file containing all ICLR papers with their urls. Original source of file [link](https://twitter.com/sergeyi49013776/status/1326218056088039425?lang=en). I have copied the file to [scripts/csv_files/iclr2021.csv](scripts/csv_files/iclr2021.py).
+Thanks to [Sergey Ivanov](https://twitter.com/SergeyI49013776) for providing a csv file containing all ICLR papers with their urls. Original source of file [link](https://twitter.com/sergeyi49013776/status/1326218056088039425?lang=en). I have copied the file to [scripts/csv_files/iclr2021.csv](scripts/csv_files/iclr2021.csv).
 
 [scripts/iclr_2021.py](scripts/iclr_2021.py) is used to download the papers. Modify the `__main__` function as per your needs.
 
